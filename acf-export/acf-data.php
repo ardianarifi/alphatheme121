@@ -274,7 +274,7 @@ acf_add_local_field_group(array(
 					'key' => 'layout_649e69388bcf5',
 					'name' => 'testimonials',
 					'label' => 'testimonials',
-					'display' => 'block',
+					'display' => 'row',
 					'sub_fields' => array(
 						array(
 							'key' => 'field_64a286ccd49ef',
@@ -292,7 +292,7 @@ acf_add_local_field_group(array(
 							'collapsed' => '',
 							'min' => 0,
 							'max' => 0,
-							'layout' => 'table',
+							'layout' => 'row',
 							'button_label' => '',
 							'sub_fields' => array(
 								array(

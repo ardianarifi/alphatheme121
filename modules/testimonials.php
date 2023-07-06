@@ -16,6 +16,72 @@ if (have_rows('testimonials_items')) :
         $title = get_sub_field('title');
         $comment = get_sub_field('comment');
 ?>
+
+
+
+
+
+
+<div class="customer">
+  <div class="container">
+    <div class="testimonial-row">
+      <?php if( have_rows('testimonials') ): ?>
+        <?php while( have_rows('testimonials') ) : the_row(); ?>
+          <div class="testimonial-item">
+            <div class="testimonial-image">
+              <?php $image = get_sub_field('image'); ?>
+              <?php if ($image) : ?>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+              <?php endif; ?>
+            </div>
+            <div class="testimonial-content">
+              <h3 class="testimonial-name"><?php the_sub_field('name'); ?></h3>
+              <p class="testimonial-title"><?php the_sub_field('title'); ?></p>
+              <p class="testimonial-comment"><?php the_sub_field('comment'); ?></p>
+            </div>
+          </div>
+        <?php endwhile; ?>
+      <?php endif; ?>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="customer">
             <div class="container">
                 <table class="customer-table">
@@ -34,14 +100,18 @@ if (have_rows('testimonials_items')) :
                         <td><?php echo $name; ?></td>
                         <td><?php echo $title; ?></td>
                         <td><?php echo $comment; ?></td>
-                    </tr>
+                   </tr>
                 </table>
-            </div>
-        </div>
+             
+             </div>
+         </div>
 <?php
     endwhile;
 endif;
 ?>
+
+<div class="test"></div>
+
 
 
 
