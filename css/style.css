@@ -109,6 +109,7 @@
   width: 100%;
   max-width: 1100px;
   margin: 50px auto;
+ 
 }
 .customer .customer-table {
   width: 100%;
@@ -157,11 +158,4 @@
   max-width: 100%;
   height: auto;
 }
-
-.test {
-  background-color: red;
-  width: 50%;
-  height: 50vh;
-}
-
 /*# sourceMappingURL=style.css.map */

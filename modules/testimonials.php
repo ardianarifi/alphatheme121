@@ -1,18 +1,16 @@
-
-
-
-
 <?php
 if (have_rows('testimonials_items')) :
     while (have_rows('testimonials_items')) :
         the_row();
+        $image = get_sub_field('image');
         $name = get_sub_field('name');
         $title = get_sub_field('title');
         $comment = get_sub_field('comment');
-
 ?>
 
-    <div class="customer">
+
+
+<div class="customer">
         <div class="container">
             <table class="customer-table">
                 <tr>
@@ -23,8 +21,8 @@ if (have_rows('testimonials_items')) :
                 </tr>
                 <tr>
                     <td>
-                        <?php if (!empty($image)) : ?>
-                            <img src="<?php echo $picture?>"class="img-fluid">
+                    <?php if (!empty($image)) : ?>
+                            <img src="<?php echo $image; ?>" class="img-fluid"> <!-- Use $image variable as the image source -->
                         <?php endif; ?>
                     </td>
                     <td><?php echo $name; ?></td>
@@ -39,29 +37,6 @@ if (have_rows('testimonials_items')) :
     endwhile;
 endif;
 ?>
-
-<div class="test"></div>
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
