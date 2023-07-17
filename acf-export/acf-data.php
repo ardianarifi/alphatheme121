@@ -292,7 +292,7 @@ acf_add_local_field_group(array(
 							'collapsed' => '',
 							'min' => 0,
 							'max' => 0,
-							'layout' => 'block',
+							'layout' => 'row',
 							'button_label' => '',
 							'sub_fields' => array(
 								array(
@@ -382,6 +382,7 @@ acf_add_local_field_group(array(
 					'min' => '',
 					'max' => '',
 				),
+	
                 //end
             ),
         
